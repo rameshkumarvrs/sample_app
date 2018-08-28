@@ -1,0 +1,10 @@
+<h1>This is my index page</h1>
+
+<h1>
+<%@contacts.each do |cont|%>
+<p>
+<%= link_to cont.name, cont %> <br />
+
+</p>
+<%end%>
+</h1>

@@ -1,0 +1,8 @@
+<h1>This is show page</h1>
+
+name:<%=@contact.name%></br>
+Email:<%=@contact.email%>
+
+<%= link_to "Edit", edit_contact_path(@contact)%>
+<%= link_to "delete", contact_path(@contact), method: :delete, data: {confirm: "Are you sure?"}%>
+<%=link_to "Back", root_path%>
